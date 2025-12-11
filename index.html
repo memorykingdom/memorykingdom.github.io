@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Biểu mẫu đăng ký Hội thao</title>
+	<title>Trang chủ</title>
 	<style>
 		body {
 			font-family: arial;
@@ -11,30 +11,19 @@
 	</style>
 </head>
 <body>
-	<h1>Đăng kí tham gia Hội thao</h1>
-	<form action="receiver.php" method="POST">
-		<label for="name">Họ và tên: </label>
-		<input id="name" type="text" name="name"> <br>
-		<label for="email">Địa chỉ email: </label>
-		<input id="email" type="text" name="email"> <br>
+	<h1>Chào mừng tới không gian lưu trữ bí mật!</h1>
+	<h2>Thông tin cá nhân</h2>
+	<p> Họ và tên: Nguyễn Trọng Quang</p>
+	<p> Sinh năm: 2008</p>
+	<p> Quê quán: <a href="https://nghean.gov.vn/">Tỉnh Nghệ An</a></p>
+	<p><b>Lớp - trường: </b>Lớp 12A2 khóa 52 - Trường THPT chuyên Phan Bội Châu</p>
 
-		<input id="lop10" type="radio" name="class" value="10">
-		<label for="lop10">Lớp 10</label>
-		<input id="lop11" type="radio" name="class" value="11">
-		<label for="lop11">Lớp 11</label>
-		<input id="lop12" type="radio" name="class" value="12">
-		<label for="lop12">Lớp 12</label> <br>
-
-		<p>Tham dự môn:</p>
-		<input id="tabletennis" type="checkbox" name="tabletennis">
-		<label for="tabletennis">Bóng bàn</label> <br>
-		<input id="badminton" type="checkbox" name="badminton">
-		<label for="badminton">Cầu lông</label> <br>
-		<input id="chess" type="checkbox" name="chess">
-		<label for="chess">Cờ vua</label> <br>
-
-		<button id="submit" type="submit">Đăng kí</button>
-		<button id="cancel" type="submit">Hủy bỏ</button>
-	</form>
+	<details>
+		<summary>Sở thích</summary>
+		<p>Đọc sách: Các đầu sách trong thể loại <abbr title="linguistics">Ngôn ngữ học</abbr></p>
+		<p>Chơi thể thao: Bóng đá, Cầu lông</p>
+	</details>
+	<h2>Các bài tập làm web</h2>
+	<p>Bài 6: Tạo biểu mẫu - <a href="bai6/bai6bieumau.html">Link</a>
 </body>
 </html>
