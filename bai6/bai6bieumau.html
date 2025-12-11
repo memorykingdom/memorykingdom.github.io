@@ -12,7 +12,8 @@
 </head>
 <body>
 	<h1>Đăng kí tham gia Hội thao</h1>
-	<form action="bai6bieumau-result.html" method="POST">
+	<!-- HTTP method GET có thể mở được file HTML đích, dùng POST sẽ gặp lỗi 405 Not Allowed -->
+	<form action="bai6bieumau-result.html" method="GET">
 		<label for="name">Họ và tên: </label>
 		<input id="name" type="text" name="name"> <br>
 		<label for="email">Địa chỉ email: </label>
