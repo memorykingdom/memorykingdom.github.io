@@ -1,0 +1,19 @@
+/* [IMPORTANT!] These rules apply to the whole website (all pages) */
+
+body {
+	font-family: arial;
+}
+
+@media (min-width: 768px) { /* phones - 480 - 768, tablets - 768 - 1024, desktops 1024 - 1200, large screens 1200+ */  
+	body {
+		width: 75%;
+		margin-left: 12.5%;
+	}
+}
+
+@media (min-width: 1024px) { 
+	body {
+		width: 50%;
+		margin-left: 25%;
+	}
+}

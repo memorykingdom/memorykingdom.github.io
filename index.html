@@ -4,28 +4,49 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Trang chủ</title>
+	<link rel="stylesheet" href="style.css">
 	<style>
-		body {
-			font-family: arial;
+		#instructions {
+			display: inline-block; /* Let the element display as a wrapped block */
+			background-color: skyblue;
+			border-radius: 12px;
+			padding: 24px;
 		}
 	</style>
 </head>
 <body>
-	<h1>Chào mừng tới không gian lưu trữ bí mật!</h1>
-	<h2>Thông tin cá nhân</h2>
-	<p> Họ và tên: Nguyễn Trọng Quang</p>
-	<p> Sinh năm: 2008</p>
-	<p> Quê quán: <a href="https://nghean.gov.vn/">Tỉnh Nghệ An</a></p>
-	<p><b>Lớp - trường: </b>Lớp 12A2 khóa 52 - Trường THPT chuyên Phan Bội Châu</p>
+	<section>
+		<h1>Chào mừng tới không gian bí mật!</h1>
+		<h2>Giới thiệu</h2>
+		<p> Họ và tên: Nguyễn Trọng Quang</p>
+		<p> Sinh năm: 2008</p>
+		<p> Quê quán: <a href="https://nghean.gov.vn/">Tỉnh Nghệ An</a></p>
+		<p><b>Lớp - trường: </b>Lớp 12A2 khóa 52 - Trường THPT chuyên Phan Bội Châu</p>
 
-	<details>
-		<summary>Sở thích</summary>
-		<p>Đọc sách: Các đầu sách trong thể loại <abbr title="linguistics">Ngôn ngữ học</abbr></p>
-		<p>Chơi thể thao: Bóng đá, Cầu lông</p>
-	</details>
-	<h2>Các bài tập làm web</h2>
-	<p>Bài 1: Làm quen với ngôn ngữ đánh dấu siêu văn bản - <a href="bai1/bai1lamquen.html">Link</a></p>
-	<p>Bài 6: Tạo biểu mẫu - <a href="bai6/bai6bieumau.html">Link</a></p>
-	<p>Bài 7: Thực hành tạo biểu mẫu - <a href="bai7/bai7bieumau.html">Link</a></p>
+		<details>
+			<summary>Sở thích</summary>
+			<p>Đọc sách: Các đầu sách trong thể loại <abbr title="linguistics">Ngôn ngữ học</abbr></p>
+			<p>Chơi thể thao: Bóng đá, Cầu lông</p>
+		</details>
+		<h2>Các bài tập làm web</h2> 
+		<div id="instructions">Để xem mã nguồn HTML ở đằng sau mỗi trang web, kích chuột phải và chọn "Inspect"</div>
+		<ul>
+			<li><p>Bài 1: Làm quen với ngôn ngữ đánh dấu siêu văn bản - <a href="bai1/bai1lamquen.html">Link</a></p></li>
+			<li><p>Bài 2: Định dạng văn bản và tạo siêu liên kết - <a href="bai2/bai2sieulienket.html">Link</a></p></li>
+			<li><p>Bài 6: Tạo biểu mẫu - <a href="bai6/bai6bieumau.html">Link</a></p></li>
+			<li><p>Bài 7: Thực hành tạo biểu mẫu - <a href="bai7/bai7bieumau.html">Link</a></p></li>
+		</ul>
+	</section>
+
+	<footer>
+		<hr>
+		<small>
+		<p>
+				© Verse 37<br>
+				Crafted by hand and mind, made with happiness and sorrow
+		</p>
+		<p>Have a good day</p>
+		</small>
+	</footer>
 </body>
 </html>
