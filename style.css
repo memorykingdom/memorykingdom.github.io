@@ -1,5 +1,9 @@
 /* [IMPORTANT!] These rules apply to the whole website (all pages) */
 
+html {
+	background-color: wheat;
+}
+
 body {
 	font-family: arial;
 }
