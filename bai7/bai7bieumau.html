@@ -1,13 +1,57 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Đóng góp ý kiến</title>
 	<link rel="stylesheet" href="../style.css">
+	<style>
+		form {
+			border: 1px solid darkgray;
+			border-radius: 12px;
+			padding: 12px;
+		}
+
+		fieldset {
+			margin-bottom: 20px;
+			border-radius: 12px;
+		}
+
+		textarea {
+			width: 100%;
+		}
+
+		button {
+			display: block; /* Default display mode is "inline", where margin specifications can't be applied */
+			padding: 12px;
+			border-radius: 12px;
+			margin: 0 4px 0 auto;
+		}
+	</style>
 </head>
 <body>
+	<section>
+		<h1>Đóng góp ý kiến cho trang web</h1>
 
+		<!-- Sends data to a Google Apps Script web app, there the app's script will process the data and appends it to a Google Sheet -->
+		<form 
+			action="https://script.google.com/macros/s/AKfycbxeczXz5mNDqSA-Hx-VnDXOEaPMIGZyKSin-Y6FTBGq3dFrBjVT1Ej5_z3mFcBnHxZBdA/exec" 
+			method="POST"> <!-- Add target="_blank" if opens the resulting page in a new tab -->
+			<fieldset>
+				<legend>1. Thông tin về người góp ý</legend>
+				<label for="name">Họ và tên*: </label>
+				<input id="name" type="text" name="name" required> <br>
+				<label for="option">Địa chỉ email: </label>
+				<input id="email" type="email" name="email">
+			</fieldset>
+			<fieldset>
+				<legend>2. Đóng góp ý kiến</legend>
+				<label for="message">Ý kiến đóng góp: </label> <br>
+				<textarea id="message" name="message" rows="6"></textarea>
+			</fieldset>
+			<button type="submit" name="submit">Hoàn thành và Gửi</button>
+		</form>
+	</section>
 	<footer>
 		<hr>
 		<small>
