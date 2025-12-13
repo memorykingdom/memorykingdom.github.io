@@ -8,17 +8,17 @@
 </head>
 <body>
 	<h1>Đăng kí tham gia Hội thao</h1>
-	<!-- HTTP method GET có thể mở được file HTML đích, dùng POST sẽ gặp lỗi 405 Not Allowed -->
-	<form action="https://script.google.com/macros/s/AKfycbwcyuprBhFBdg7oYSA8jyrJOuiZM7T08Ol3VJi19N73mkhLv3DWPgUpNaaHTLtiQrL9lQ/exec" method="POST">
+	
+	<form action="https://script.google.com/macros/s/AKfycbx27UXWTzpXiBOr_6hHiNp_cB0rvbppiGyVyLaEN1xS3Vo_xujBllyu8Ftp-DZ-XKzo/exec" method="POST">
 		<input type="hidden" name="sheetgid" value="30323401"> <!-- Add form metadata to sent to the server without making a field -->
 
 		<label for="name">Họ và tên: </label>
-		<input id="name" type="text" name="name"> <br>
+		<input id="name" type="text" name="name" required> <br>
 		<label for="email">Địa chỉ email: </label>
-		<input id="email" type="text" name="email"> <br>
+		<input id="email" type="email" name="email"> <br>
 
 		<p>
-		<input id="lop10" type="radio" name="grade" value="10">
+		<input id="lop10" type="radio" name="grade" value="10" checked>
 		<label for="lop10">Lớp 10</label>
 		<input id="lop11" type="radio" name="grade" value="11">
 		<label for="lop11">Lớp 11</label>
