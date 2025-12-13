@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thành công!</title>
+  <title>Lỗi</title>
   <style>
     body { 
       font-family: Arial, sans-serif; 
@@ -44,7 +44,25 @@
   <div class="container">
     <h2>❌ Quá trình gửi thất bại!</h2>
     <p>Một lỗi đã xảy ra trong quá trình gửi ý kiến của bạn đến cơ sở dữ liệu, hãy liên lạc với lập trình viên của trang web để nhận hỗ trợ</p>
-    <a class="back-link" href="bai7bieumau.html">Trở lại trang Biểu mẫu</a>
+    <p><strong>Mã lỗi: </strong> <span id="error-message-display">Cũng không biết nữa 😭</span></p>
+    <a class="back-link" href="../index.html">Trở lại Trang chủ</a>
   </div>
+
+  <script>
+    // Get the current URL's query string (the part starting with ?)
+    const queryString = window.location.search;
+
+    // Create a URLSearchParams object from the query string
+    // This object automatically handles Parsing + Decoding.
+    const urlParamsApi = new URLSearchParams(queryString);
+
+    const errorMessage = urlParamsApi.get('error_msg'); 
+
+    const displayElement = document.getElementById('error-message-display');
+
+    if (errorMessage && displayElement) { // safe null checks
+        displayElement.textContent = errorMessage; 
+    }
+  </script>
 </body>
 </html>
