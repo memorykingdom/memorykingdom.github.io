@@ -1,11 +1,8 @@
 /* [IMPORTANT!] These rules apply to the whole website (all pages) */
 
-html {
-	background-color: wheat;
-}
-
 body {
 	font-family: arial;
+	background-color: wheat;
 }
 
 @media (min-width: 768px) { /* phones - 480 - 768, tablets - 768 - 1024, desktops 1024 - 1200, large screens 1200+ */  
