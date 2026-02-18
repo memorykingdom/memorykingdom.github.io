@@ -1,15 +1,41 @@
-.problem-statement {
+/*
+Color palette: F4F0E4, 44A194, 537D96, EC8F8D 
+*/
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+body {
+	font-family: "Merriweather", "Inter", arial;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings:
+	"wdth" 100;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+.problem-statement {
+	background: #EC8F8D;
+	padding: 6px 20px;
+	border-radius: 12px;
+	margin: 12px 0;
 }
 
 .answer-region {
-
 }
 
 .answer-statement {
-
+	background: #D8E983;
+	padding: 6px 20px;
+	border-radius: 12px;
+	margin: 12px 0;
 }
 
 .note {
-	
+	background: #3BC1A8;
+	padding: 6px 20px;
+	border-radius: 12px;
+	margin: 12px 0;
 }

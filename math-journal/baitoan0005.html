@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="memorykingdom.github.io">
+	<meta property="og:description" content="Welcome to the Kingdom of Memories">
+	<title>Bài toán #0004</title>
+	<link rel="stylesheet" href="../style.css"> <!-- This must be put before -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+	<link rel="manifest" href="../favicons/site.webmanifest">
+	<style>
+	</style>
+</head>
+<body>
+	<header>
+		<nav></nav>
+	</header>
+
+	<main>
+		<article>
+			<h1>Bài toán #0005</h1>
+			<ul>
+				<li>Dạng bài: Tính đơn điệu của hàm số</li>
+				<li>Mức độ: Dễ</li>
+			</ul>
+			<section>
+				<h2>Đề bài</h2>
+				<div class="problem-statement">
+					<p>Sau khi phát hiện được một bệnh dịch, các chuyên gia y tế ước tính số người nhiễm bệnh kể từ ngày xuất hiện bệnh nhân đầu tiên đến ngày thứ \(t\) là \(f(t) = 180t + 42t^2 - t^3 \, , \; t = 0, 1, ..., 30\). Nếu coi \(f(t)\) là hàm số xác định trên đoạn \([0;30]\) thì đạo hàm \(f'(t)\) được xem là tốc độ truyền bệnh (Đơn vị: người / ngày) tại thời điểm t. Hỏi trong 30 ngày đó, có bao nhiêu ngày mà tốc độ truyền bệnh giảm? </p>
+				</div>
+				<details class="answer-region">
+					<summary>Hiện đáp án</summary>
+					<p>Ta có:</p>
+					<p>\[
+						\begin{align}
+							f(t) &= -t^3 + 42t^2 + 180t \\
+							f'(t) &= -3t^2 + 84t + 180 \\
+							f''(t) &= -6t + 84 \\ 
+							f''(t) &< 0 \Leftrightarrow t > 14 \\
+						\end{align}
+					\]</p>
+					<p>Như vậy, từ ngày 15 cho đến ngày 30, tốc độ truyền bệnh của bệnh dịch giảm. </p>
+					<div class="answer-statement">
+						<p><strong>Đáp án: </strong></p>
+						<p>Có 16 ngày trong đó tốc độ truyền bệnh giảm.</p>
+					</div>
+				</details>
+			</section>
+		</article>
+	</main>
+
+	<footer>
+		<hr>
+			<small>
+			<p>
+					© Verse 37<br>
+					Crafted by hand and mind, made with happiness and sorrow
+			</p>
+			<p>Have a good day</p>
+			<a href="../index.html">Trở về</a>
+		</small>
+	</footer>
+
+	<script id="MathJax-script" src="load-mathjax.js" async></script>
+</body>
+</html>

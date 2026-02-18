@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="memorykingdom.github.io">
+	<meta property="og:description" content="Welcome to the Kingdom of Memories">
+	<title>Bài toán #0004</title>
+	<link rel="stylesheet" href="../style.css"> <!-- This must be put before -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+	<link rel="manifest" href="../favicons/site.webmanifest">
+	<style>
+	</style>
+</head>
+<body>
+	<header>
+		<nav></nav>
+	</header>
+
+	<main>
+		<article>
+			<h1>Bài toán #0004</h1>
+			<ul>
+				<li>Dạng bài: Tính đơn điệu của hàm số</li>
+				<li>Mức độ: Trung bình</li>
+			</ul>
+			<section>
+				<h2>Đề bài</h2>
+				<div class="problem-statement">
+					<p>Kính viễn vọng không gian Hubble được đưa vào vũ trụ ngày 24/4/1990 bằng tàu con thoi Discovery. Vận tốc của tàu con thoi trong sứ mệnh này, từ lúc cất cánh tại thời điểm \(t = 0\) (s) cho đến khi tên lửa đẩy được phóng đi tại thời điểm \(t = 126\) (s), cho bởi hàm số sau: \(v(t) = 0,001302t^3 – 0,09029t^2 + 23 \, (ft/s) \) với \( 1 \, feet = 0,3048 \, m \). Hỏi gia tốc của tàu con thoi sẽ tăng trong khoảng thời gian nào tính từ thời điểm cất cánh cho đến khi tên lửa đẩy được phóng đi? Kết quả làm tròn đến hàng phần mười.</p>
+				</div>
+				<details class="answer-region">
+					<summary>Hiện đáp án</summary>
+					<p>Gia tốc của tàu con thoi, \(g(t)\), là đạo hàm của \(v(t)\):</p>
+					<p>\[
+						\begin{align}
+						v(t) &= 0.001302t^3 \, – \, 0.09029t^2 + 23 \\
+						g(t) = v'(t) &= 0.003906t^2 - 0.18058t \\
+						g'(t) &= 0.007812t - 0.18058 \\
+						g'(t) > 0 &\Leftrightarrow t > \frac{0.18058}{0.007812} \approx 23.12 
+						\end{align}
+					\]</p>
+					<p>Gia tốc</p>
+					<div class="answer-statement">
+						<p><strong>Đáp án: </strong></p>
+						<p>Gia tốc của tàu con voi sẽ tăng trong khoảng từ 23.1 giây cho đến 126 giây.</p>
+					</div>
+				</details>
+			</section>
+		</article>
+	</main>
+
+	<footer>
+		<hr>
+			<small>
+			<p>
+					© Verse 37<br>
+					Crafted by hand and mind, made with happiness and sorrow
+			</p>
+			<p>Have a good day</p>
+			<a href="../index.html">Trở về</a>
+		</small>
+	</footer>
+
+	<script id="MathJax-script" src="load-mathjax.js" async></script>
+</body>
+</html>

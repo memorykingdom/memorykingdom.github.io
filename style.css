@@ -1,8 +1,13 @@
 /* [IMPORTANT!] These rules apply to the whole website (all pages) */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 body {
-	font-family: arial;
-	background-color: wheat;
+	font-family: "Inter", arial;
+	font-optical-sizing: auto;
+	font-style: normal;
+	background-color: #F4F0E4;
+	padding: 12px;
 }
 
 @media (min-width: 768px) { /* phones - 480 - 768, tablets - 768 - 1024, desktops 1024 - 1200, large screens 1200+ */  

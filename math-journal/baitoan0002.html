@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="memorykingdom.github.io">
+	<meta property="og:description" content="Welcome to the Kingdom of Memories">
+	<title>Bài toán #0002</title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+	<link rel="manifest" href="../favicons/site.webmanifest">
+	<style>
+	</style>
+</head>
+<body>
+	<header>
+		<nav></nav>
+	</header>
+
+	<main>
+		<article>
+			<h1>Bài toán #0002</h1>
+			<ul>
+				<li>Dạng bài: Tính đơn điệu của hàm số</li>
+				<li>Mức độ: Trung bình</li>
+			</ul>
+			<section>
+				<h2>Đề bài</h2>
+				<div class="problem-statement">
+					<p>Một tên lửa bay vào không trung với quãng đường đi được là \(s(t)\) km là hàm phụ thuộc theo biến \(t\) giây tuân theo biểu thức sau: \(s(t) = e^{t^2+3}+2te^{3t+1} \; (km)\). Hỏi vận tốc của tên lửa sau 1 giây là bao nhiêu? (Làm tròn đến hàng đơn vị)</p>
+				</div>
+				<details class="answer-region">
+					<summary>Hiện đáp án</summary>
+					<p>Vận tốc tức thời theo thời gian của tên lửa có thể được biểu diễn bằng hàm \(v(t)\), đạo hàm của hàm \(s(t)\):
+					<p>\[
+						\begin{align}
+							s(t) &= e^{t^2+3} +2te^{3t+1} \\
+							s'(t) &= e^{t^2+3}(t^2+3)' + 2te^{3t+1}(3t+1)' + 2e^{3t+1} \\
+							v(t) &= 2te^{t^2+3} + 6te^{3t+1} + 2e^{3t+1} \\
+							&= 2te^{t^2+3} + (6t+2)e^{3t+1} \\
+						\end{align}
+					\] </p>
+					<p>Vận tốc của tên lửa sau 1 giây là:</p>
+					<p>\[
+						\begin{align}
+						v(1) &= 2 \cdot 1 \cdot e^{1^2+3} + (6 \cdot 1 + 2)e^{3 \cdot 1 + 1} \\
+						&= 2e^4 + 8e^4 \\
+						&= 10e^4 \approx 545.98 \, (km/s)
+						\end{align}
+					\]</p>
+					<div class="answer-statement">
+						<p><strong>Đáp án: </strong></p>
+						<p>Sau 1 giây, vận tốc của tên lửa là vào khoảng 546 km/s</p>
+					</div>
+				</details>
+			</section>
+		</article>
+	</main>
+
+	<footer>
+		<hr>
+			<small>
+			<p>
+					© Verse 37<br>
+					Crafted by hand and mind, made with happiness and sorrow
+			</p>
+			<p>Have a good day</p>
+			<a href="../index.html">Trở về</a>
+		</small>
+	</footer>
+
+	<script id="MathJax-script" src="load-mathjax.js" async></script>
+</body>
+</html>
